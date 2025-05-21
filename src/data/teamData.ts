@@ -12,9 +12,9 @@ export type TeamMember = {
 export const teamMembers: TeamMember[] = [
   {
     id: 1,
-    name: "Alex Morgan",
-    role: "Founder & CEO",
-    imageUrl: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg",
+    name: "Adam Ledoor",
+    role: "Co-founder/CEO/ Team Lead",
+    imageUrl: "/adam2.jpg",
     socialLinks: {
       twitter: "https://twitter.com",
       linkedin: "https://linkedin.com",
@@ -22,9 +22,9 @@ export const teamMembers: TeamMember[] = [
   },
   {
     id: 2,
-    name: "Sarah Chen",
-    role: "CTO",
-    imageUrl: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg",
+    name: "Akindele Simeon",
+    role: "Co-founder, ( COO)",
+    imageUrl: "/akindele.jpg",
     socialLinks: {
       twitter: "https://twitter.com",
       linkedin: "https://linkedin.com",
@@ -32,18 +32,18 @@ export const teamMembers: TeamMember[] = [
   },
   {
     id: 3,
-    name: "Michael Rodriguez",
-    role: "Head of Product",
-    imageUrl: "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg",
+    name: "Vimal Tarsariya",
+    role: "Data Analyst, GTM Strategist",
+    imageUrl: "/vimal.jpg",
     socialLinks: {
       linkedin: "https://linkedin.com",
     },
   },
   {
     id: 4,
-    name: "Emma Wilson",
-    role: "Lead Designer",
-    imageUrl: "https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg",
+    name: "Shehu Rasheed",
+    role: "Data Analyst, GTM Strategist",
+    imageUrl: "/rasheed.jpeg",
     socialLinks: {
       twitter: "https://twitter.com",
       linkedin: "https://linkedin.com",
@@ -51,8 +51,8 @@ export const teamMembers: TeamMember[] = [
   },
   {
     id: 5,
-    name: "David Patel",
-    role: "AI Engineer",
+    name: "David Peller",
+    role: "Software Lead Developer",
     imageUrl: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg",
     socialLinks: {
       linkedin: "https://linkedin.com",
@@ -73,18 +73,18 @@ export const teamMembers: TeamMember[] = [
 export const advisors: TeamMember[] = [
   {
     id: 1,
-    name: "Dr. James Williams",
-    role: "AI Research Advisor",
-    imageUrl: "https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg",
+    name: "Dr Williams, ( Ron Sheridan )",
+    role: "Startup Adviser, Business Integration Strategy",
+    imageUrl: "/ron.jpg",
     socialLinks: {
       linkedin: "https://linkedin.com",
     },
   },
   {
     id: 2,
-    name: "Katherine Lee",
-    role: "Industry Expert",
-    imageUrl: "https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg",
+    name: "Douglas Hassel",
+    role: "Sustainability Lead Project Adviser",
+    imageUrl: "/ron2.jpeg",
     socialLinks: {
       twitter: "https://twitter.com",
       linkedin: "https://linkedin.com",
@@ -93,7 +93,7 @@ export const advisors: TeamMember[] = [
 ];
 
 export const productImages = [
-  "https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg",
-  "https://images.pexels.com/photos/3182777/pexels-photo-3182777.jpeg",
+  "/waitlist2.png",
+  "/home.png",
   "https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg",
 ];

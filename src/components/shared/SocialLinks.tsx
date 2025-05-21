@@ -1,5 +1,5 @@
-import React from 'react';
-import { Twitter, Linkedin, Github } from 'lucide-react';
+import React from "react";
+import { Twitter, Linkedin } from "lucide-react";
 
 type SocialLinksProps = {
   twitter?: string;
@@ -12,8 +12,8 @@ type SocialLinksProps = {
 const SocialLinks: React.FC<SocialLinksProps> = ({
   twitter,
   linkedin,
-  github,
-  className = '',
+  // github,
+  className = "",
   iconSize = 20,
 }) => {
   return (
@@ -24,8 +24,7 @@ const SocialLinks: React.FC<SocialLinksProps> = ({
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-600 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400 transition-colors"
-          aria-label="Twitter"
-        >
+          aria-label="Twitter">
           <Twitter size={iconSize} />
         </a>
       )}
@@ -35,12 +34,11 @@ const SocialLinks: React.FC<SocialLinksProps> = ({
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-600 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 transition-colors"
-          aria-label="LinkedIn"
-        >
+          aria-label="LinkedIn">
           <Linkedin size={iconSize} />
         </a>
       )}
-      {github && (
+      {/* {github && (
         <a
           href={github}
           target="_blank"
@@ -50,7 +48,7 @@ const SocialLinks: React.FC<SocialLinksProps> = ({
         >
           <Github size={iconSize} />
         </a>
-      )}
+      )} */}
     </div>
   );
 };

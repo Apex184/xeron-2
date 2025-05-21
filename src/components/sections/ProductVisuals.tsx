@@ -1,16 +1,20 @@
-import React, { useState } from 'react';
-import { productImages } from '../../data/teamData';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import React, { useState } from "react";
+import { productImages } from "../../data/teamData";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const ProductVisuals: React.FC = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const nextImage = () => {
-    setCurrentImageIndex((prev) => (prev === productImages.length - 1 ? 0 : prev + 1));
+    setCurrentImageIndex((prev) =>
+      prev === productImages.length - 1 ? 0 : prev + 1
+    );
   };
 
   const prevImage = () => {
-    setCurrentImageIndex((prev) => (prev === 0 ? productImages.length - 1 : prev - 1));
+    setCurrentImageIndex((prev) =>
+      prev === 0 ? productImages.length - 1 : prev - 1
+    );
   };
 
   return (
@@ -24,43 +28,59 @@ const ProductVisuals: React.FC = () => {
             Schedule → Sync → Collaborate → Automate
           </p>
           <p className="text-gray-700 dark:text-gray-300">
-            One-click integrations and zero hassle. Xerion AutoCal works behind the scenes so you can focus on what matters.
+            One-click integrations and zero hassle. Xerion AutoCal works behind
+            the scenes so you can focus on what matters.
           </p>
         </div>
 
         <div className="relative max-w-5xl mx-auto">
-          <div className="aspect-w-16 aspect-h-9 overflow-hidden rounded-2xl shadow-xl">
+          {/* Replaced the aspect ratio container with a more flexible approach */}
+          <div className="relative rounded-2xl shadow-xl overflow-hidden">
+            {/* Gradient overlay */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent z-10" />
-            <img 
-              src={productImages[currentImageIndex]} 
-              alt={`Product visual ${currentImageIndex + 1}`} 
-              className="w-full h-full object-cover transition-opacity duration-500"
-            />
+
+            {/* Image container with proper scaling */}
+            <div
+              className="w-full"
+              style={{ paddingBottom: "56.25%" /* 16:9 aspect ratio */ }}>
+              {productImages.map((src, index) => (
+                <img
+                  key={index}
+                  src={src}
+                  alt={`Product visual ${index + 1}`}
+                  className={`absolute top-0 left-0 w-full h-full object-contain transition-opacity duration-500 ${
+                    index === currentImageIndex
+                      ? "opacity-100"
+                      : "opacity-0 pointer-events-none"
+                  }`}
+                />
+              ))}
+            </div>
           </div>
-          
-          <button 
+
+          <button
             onClick={prevImage}
             className="absolute left-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 flex items-center justify-center rounded-full bg-white/20 backdrop-blur-md border border-white/10 text-white hover:bg-white/30 transition-colors"
-            aria-label="Previous image"
-          >
+            aria-label="Previous image">
             <ChevronLeft size={20} />
           </button>
-          
-          <button 
+
+          <button
             onClick={nextImage}
             className="absolute right-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 flex items-center justify-center rounded-full bg-white/20 backdrop-blur-md border border-white/10 text-white hover:bg-white/30 transition-colors"
-            aria-label="Next image"
-          >
+            aria-label="Next image">
             <ChevronRight size={20} />
           </button>
-          
+
           <div className="flex justify-center mt-4 space-x-2">
             {productImages.map((_, index) => (
               <button
                 key={index}
                 onClick={() => setCurrentImageIndex(index)}
                 className={`w-3 h-3 rounded-full transition-colors ${
-                  index === currentImageIndex ? 'bg-blue-600 dark:bg-blue-400' : 'bg-gray-300 dark:bg-gray-700'
+                  index === currentImageIndex
+                    ? "bg-blue-600 dark:bg-blue-400"
+                    : "bg-gray-300 dark:bg-gray-700"
                 }`}
                 aria-label={`Go to image ${index + 1}`}
               />

@@ -1,20 +1,25 @@
-import React from 'react';
-import Card from '../ui/Card';
-import SocialLinks from '../shared/SocialLinks';
-import { teamMembers, advisors, TeamMember } from '../../data/teamData';
-import { useLanguage } from '../../context/LanguageContext';
+import React from "react";
+import Card from "../ui/Card";
+import SocialLinks from "../shared/SocialLinks";
+import { teamMembers, advisors, TeamMember } from "../../data/teamData";
+import { useLanguage } from "../../context/LanguageContext";
 
 const TeamMemberCard: React.FC<{ member: TeamMember }> = ({ member }) => (
-  <Card variant="team" className="overflow-hidden transition-all duration-300 hover:shadow-2xl hover:translate-y-[-5px]">
-    <div className="h-48 overflow-hidden">
+  <Card
+    variant="team"
+    className="overflow-hidden transition-all duration-300 hover:shadow-2xl hover:translate-y-[-5px]">
+    <div className="relative pb-[100%]">
+      {/* Using square aspect ratio (1:1) with pb-[100%] */}
       <img
         src={member.imageUrl}
         alt={member.name}
-        className="w-full h-full object-cover"
+        className="absolute top-0 left-0 w-full h-full object-cover object-top"
       />
     </div>
     <div className="p-6">
-      <h3 className="text-xl font-semibold text-gray-900 dark:text-white">{member.name}</h3>
+      <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
+        {member.name}
+      </h3>
       <p className="text-blue-600 dark:text-blue-400 mb-4">{member.role}</p>
       <SocialLinks
         twitter={member.socialLinks.twitter}
@@ -34,10 +39,11 @@ const TeamMembers: React.FC = () => {
       <div className="container mx-auto px-4 sm:px-6">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900 dark:text-white">
-            {getTranslation('teamTitle')}
+            {getTranslation("teamTitle")}
           </h2>
           <p className="text-xl text-gray-700 dark:text-gray-300">
-            Meet the talented individuals behind Xerion AutoCal who are passionate about revolutionizing scheduling.
+            Meet the talented individuals behind Xerion AutoCal who are
+            passionate about revolutionizing scheduling.
           </p>
         </div>
 
@@ -49,7 +55,7 @@ const TeamMembers: React.FC = () => {
 
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-3xl font-bold mb-6 text-gray-900 dark:text-white">
-            {getTranslation('advisorsTitle')}
+            {getTranslation("advisorsTitle")}
           </h2>
         </div>
 

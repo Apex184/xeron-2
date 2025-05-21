@@ -1,7 +1,7 @@
-import React from 'react';
-import SocialLinks from '../shared/SocialLinks';
-import { useLanguage } from '../../context/LanguageContext';
-import { Zap } from 'lucide-react';
+import React from "react";
+import SocialLinks from "../shared/SocialLinks";
+import { useLanguage } from "../../context/LanguageContext";
+import { Zap } from "lucide-react";
 
 const Footer: React.FC = () => {
   const { getTranslation } = useLanguage();
@@ -17,81 +17,113 @@ const Footer: React.FC = () => {
               <span>Xerion AutoCal</span>
             </div>
             <p className="text-gray-600 dark:text-gray-400 max-w-xs">
-              Revolutionizing scheduling with AI precision. Join thousands of professionals ready to redefine scheduling.
+              Revolutionizing scheduling with AI precision. Join thousands of
+              professionals ready to redefine scheduling.
             </p>
-            <SocialLinks 
-              twitter="https://twitter.com"
+            <SocialLinks
+              twitter="https://x.com/XerionAutocal?t=D_PbUl4EkJDpMzeySADd4A&s=09"
               linkedin="https://linkedin.com"
-              github="https://github.com"
+              // github="https://github.com"
             />
           </div>
-          
+
           <div>
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Quick Links</h3>
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+              Quick Links
+            </h3>
             <ul className="space-y-2">
               <li>
-                <a href="#features" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                <a
+                  href="#features"
+                  className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                   Features
                 </a>
               </li>
               <li>
-                <a href="#why-join" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                <a
+                  href="#why-join"
+                  className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                   Benefits
                 </a>
               </li>
               <li>
-                <a href="#team" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                <a
+                  href="#team"
+                  className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                   Team
                 </a>
               </li>
               <li>
-                <a href="#contact" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                <a
+                  href="#contact"
+                  className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                   Contact
                 </a>
               </li>
             </ul>
           </div>
-          
+
           <div>
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Legal</h3>
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+              Legal
+            </h3>
             <ul className="space-y-2">
               <li>
-                <a href="#privacy" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-                  {getTranslation('privacyPolicy')}
+                <a
+                  href="#privacy"
+                  className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                  {getTranslation("privacyPolicy")}
                 </a>
               </li>
               <li>
-                <a href="#terms" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
-                  {getTranslation('termsOfService')}
+                <a
+                  href="#terms"
+                  className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                  {getTranslation("termsOfService")}
                 </a>
               </li>
               <li>
-                <a href="#cookies" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                <a
+                  href="#cookies"
+                  className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                   Cookies Policy
                 </a>
               </li>
             </ul>
           </div>
-          
+
           <div>
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Related Products</h3>
+            <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+              Related Products
+            </h3>
             <ul className="space-y-2">
               <li>
-                <a href="https://zholix.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                <a
+                  href="https://www.x-autocal.store"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                   Zholix
                 </a>
               </li>
               <li>
-                <a href="https://xeriontech.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                <a
+                  href="https://xeriontech.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                   Xerion Tech
                 </a>
               </li>
             </ul>
           </div>
         </div>
-        
+
         <div className="mt-12 pt-8 border-t border-gray-200 dark:border-gray-800 text-center text-gray-600 dark:text-gray-400">
-          <p>&copy; {currentYear} Xerion AutoCal. {getTranslation('footerRights')}</p>
+          <p>
+            &copy; {currentYear} Xerion AutoCal.{" "}
+            {getTranslation("footerRights")}
+          </p>
         </div>
       </div>
     </footer>
