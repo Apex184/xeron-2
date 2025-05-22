@@ -34,11 +34,10 @@ const Header: React.FC = () => {
           <div className="flex items-center">
             <div className="flex items-center gap-2 font-bold text-xl text-gray-900 dark:text-white">
               <img
-                src="/xerion2.png"
+                src="/xerion1.png"
                 alt="Xerion AutoCal Logo"
-                className="h-8 w-auto object-contain" // Better aspect ratio handling
+                className="h-10 md:h-16 w-auto object-contain"
                 onError={(e) => {
-                  // Fallback in case image fails to load
                   (e.target as HTMLImageElement).style.display = "none";
                 }}
               />
