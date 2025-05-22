@@ -42,7 +42,7 @@ const Header: React.FC = () => {
                   (e.target as HTMLImageElement).style.display = "none";
                 }}
               />
-              <span>Xerion AutoCal</span>
+              {/* <span>Xerion AutoCal</span> */}
             </div>
           </div>
 
