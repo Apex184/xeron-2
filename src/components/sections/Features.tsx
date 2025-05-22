@@ -1,7 +1,7 @@
-import React from 'react';
-import Card from '../ui/Card';
-import { useLanguage } from '../../context/LanguageContext';
-import { Calendar, Layers, Clock, Share2, Zap } from 'lucide-react';
+import React from "react";
+import Card from "../ui/Card";
+import { useLanguage } from "../../context/LanguageContext";
+import { Calendar, Layers, Clock, Share2, Zap } from "lucide-react";
 
 const FeatureCard: React.FC<{
   icon: React.ReactNode;
@@ -13,7 +13,9 @@ const FeatureCard: React.FC<{
       <div className="w-12 h-12 flex items-center justify-center rounded-full bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-400 mb-4">
         {icon}
       </div>
-      <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">{title}</h3>
+      <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">
+        {title}
+      </h3>
       <p className="text-gray-600 dark:text-gray-400">{description}</p>
     </div>
   </Card>
@@ -25,28 +27,33 @@ const Features: React.FC = () => {
   const features = [
     {
       icon: <Zap size={24} />,
-      title: getTranslation('feature1'),
-      description: 'Our AI understands your preferences and optimizes your schedule automatically.',
+      title: getTranslation("feature1"),
+      description:
+        "Our AI understands your preferences and optimizes your schedule automatically.",
     },
     {
       icon: <Layers size={24} />,
-      title: getTranslation('feature2'),
-      description: 'Connects with all your favorite calendar apps without friction.',
+      title: getTranslation("feature2"),
+      description:
+        "Connects with all your favorite calendar apps without friction.",
     },
     {
       icon: <Calendar size={24} />,
-      title: getTranslation('feature3'),
-      description: 'Flawlessly coordinate with Zholix for enhanced team productivity.',
+      title: getTranslation("feature3"),
+      description:
+        "Flawlessly coordinate with Zholix for enhanced team productivity.",
     },
     {
       icon: <Share2 size={24} />,
-      title: getTranslation('feature4'),
-      description: 'Stay in sync with your team with smart notifications and updates.',
+      title: getTranslation("feature4"),
+      description:
+        "Stay in sync with your team with smart notifications and updates.",
     },
     {
       icon: <Clock size={24} />,
-      title: getTranslation('feature5'),
-      description: 'Never worry about time zones again with automatic adjustments.',
+      title: getTranslation("feature5"),
+      description:
+        "Never worry about time zones again with automatic adjustments.",
     },
   ];
 
@@ -58,7 +65,7 @@ const Features: React.FC = () => {
             Product Highlights
           </h2>
           <p className="text-xl text-gray-700 dark:text-gray-300">
-            {getTranslation('productIntro')}
+            {getTranslation("productIntro")}
           </p>
         </div>
 

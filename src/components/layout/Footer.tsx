@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
               Quick Links
             </h3>
             <ul className="space-y-2">
-              <li>
+              {/* <li>
                 <a
                   href="#features"
                   className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
@@ -52,7 +52,7 @@ const Footer: React.FC = () => {
                   className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
                   Team
                 </a>
-              </li>
+              </li> */}
               <li>
                 <a
                   href="#contact"
