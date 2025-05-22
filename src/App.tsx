@@ -1,7 +1,7 @@
-import React from "react";
+// import React from "react";
 import Header from "./components/layout/Header";
 import Hero from "./components/sections/Hero";
-import Features from "./components/sections/Features";
+// import Features from "./components/sections/Features";
 import WhyJoin from "./components/sections/WhyJoin";
 import ProductVisuals from "./components/sections/ProductVisuals";
 // import TeamMembers from "./components/sections/TeamMembers";
@@ -20,7 +20,7 @@ function App() {
           <Header />
           <main>
             <Hero />
-            <Features />
+            {/* <Features /> */}
             <ProductVisuals />
             <WhyJoin />
             {/* <TeamMembers /> */}
