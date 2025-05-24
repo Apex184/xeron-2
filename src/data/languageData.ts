@@ -2,7 +2,7 @@
 export const languages: Record<string, Record<string, string>> = {
   en: {
     // Hero Section
-    headline: "Transform Scheduling with AI Precision.",
+    headline: "Transforming Scheduling with AI Precision",
     subheadline: "Be the first to experience seamless, intelligent scheduling with Xerion AutoCal",
     ctaButton: "Join the Waitlist",
 
