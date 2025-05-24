@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
               />
             </div>
             <p className="text-gray-600 dark:text-gray-400 max-w-xs">
-              Transform Scheduling with AI Precision. Join thousands of
+              Transforming Scheduling with AI Precision. Join thousands of
               professionals ready to redefine scheduling.
             </p>
             <SocialLinks
