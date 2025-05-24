@@ -13,11 +13,17 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
           <div className="space-y-4">
             <div className="flex items-center gap-2 font-bold text-xl text-gray-900 dark:text-white">
-              <Zap className="h-6 w-6 text-blue-600 dark:text-blue-400" />
-              <span>Xerion AutoCal</span>
+              <img
+                src="/xerion1.png"
+                alt="Xerion AutoCal Logo"
+                className="h-10 md:h-16 w-auto object-contain"
+                onError={(e) => {
+                  (e.target as HTMLImageElement).style.display = "none";
+                }}
+              />
             </div>
             <p className="text-gray-600 dark:text-gray-400 max-w-xs">
-              Revolutionizing scheduling with AI precision. Join thousands of
+              Transform Scheduling with AI Precision. Join thousands of
               professionals ready to redefine scheduling.
             </p>
             <SocialLinks
