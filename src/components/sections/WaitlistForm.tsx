@@ -32,11 +32,14 @@ const WaitlistForm: React.FC = () => {
     setSuccessMessage("");
 
     try {
-      const response = await fetch("https://xerion.onrender.com/api/waitlist", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
+      const response = await fetch(
+        "https://xerion-ovpd.onrender.com/api/waitlist",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formData),
+        }
+      );
 
       if (!response.ok) {
         const errorData = await response.json();

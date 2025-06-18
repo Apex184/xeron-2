@@ -19,11 +19,14 @@ const ContactForm: React.FC = () => {
     setSuccessMessage("");
 
     try {
-      const response = await fetch("https://xerion.onrender.com/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ message }),
-      });
+      const response = await fetch(
+        "https://xerion-ovpd.onrender.com/api/contact",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ message }),
+        }
+      );
 
       if (!response.ok) {
         const errorData = await response.json();
